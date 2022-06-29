@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: gray;
+}
+
+/*Create a scroll bar for the entire page scroll*/
+::-webkit-scrollbar {
+    width: 1em;
+    height: 1em;
+}
+::-webkit-scrollbar-track {
+    background: rgb(7, 231, 7);
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(2, 250, 175);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(10, 143, 103);
+}
+
+
+@supports(scrollbar-color: red blue) {
+    * {
+        scrollbar-color: rgb(7, 231, 7) rgb(2, 250, 175);
+        scrollbar-width: thin;
+    }
+}
+
+.head-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.data-info {
+    display: flex;
+    color: white;
+}
+
+.data-info h4 {
+    margin: 7px;
+}
+
+
+.first-sec {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: black;
+    padding: 10px;
+}
+
+.card { 
+    width: 60%;
+    padding: 5px 30px;
+}
+
+.card h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.coins {
+    padding: 5px;
+}
+/* .card .coins {
+    display: flex;
+    justify-content: space-between;
+} */
+.all-coin-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 20px;
+}
+
+table td{
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* .data {
+    display: flex;
+    flex-direction: column;
+} */
+
+.coins p {
+    color: green;
+}
+
+.name,
+.price,
+.tsupply,
+.mcap, 
+.coin,
+.markets,
+.tvol {
+    color: blue;
+}
+
+.filter {
+    width: 35%;
+    margin-top: 10px;
+}
+.form {
+    width: 100%;
+}
+
+.input {
+    padding: 5px;
+}
+
+.button {
+    background: rgb(7, 231, 7);
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgb(10, 143, 103);
+}
+
+.all-Info {
+    background: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.tname {
+    font-weight: bold;
+    color: white;
+}
+
+.detail {
+    color: blue;
+}
+
+@media only screen and (max-width: 769px) {
+    .data-info {
+        display: block;
+    }
+
+    #tsupply, #mcap {
+        display: none;
+    }
+
+    .first-sec {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    table td{
+        padding: 7px;
+    }
+
+    .card {
+        width: 100%;
+    }
+    
+    .all-coin-data {
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 376px) {
+    table td {
+        padding: 1px;
+    }
+
+    .card {
+        padding: 2px;
+    }
+
+    .filter {
+        width: 90%;
+    }
+}
