@@ -14,7 +14,7 @@ body {
     height: 1em;
 }
 ::-webkit-scrollbar-track {
-    background: rgb(7, 231, 7);
+    background: rgb(24, 90, 24);
     border-radius: 100vw;
     margin-block: 0.5em;
 }
@@ -29,7 +29,7 @@ body {
 
 @supports(scrollbar-color: red blue) {
     * {
-        scrollbar-color: rgb(7, 231, 7) rgb(2, 250, 175);
+        scrollbar-color: rgb(24, 65, 24) rgb(2, 250, 175);
         scrollbar-width: thin;
     }
 }
@@ -43,7 +43,7 @@ body {
 
 .data-info {
     display: flex;
-    color: white;
+    color: black;
 }
 
 .data-info h4 {
@@ -115,7 +115,7 @@ table td{
 .coin,
 .markets,
 .tvol {
-    color: blue;
+    color: rgb(41, 41, 129);
 }
 
 .filter {
@@ -150,13 +150,13 @@ table td{
     margin-top: 20px;
 }
 
-.tname {
+.tname, .tID {
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 .detail {
-    color: blue;
+    color: rgb(41, 41, 119);
 }
 
 @media only screen and (max-width: 769px) {
